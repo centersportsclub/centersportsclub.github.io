@@ -2,7 +2,13 @@
 <head>
     <title>Contacts-Center Sports Club</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="logo.png"
+    type="image/png" class="logo">
     <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
         .container {
     max-width: 1170px;
     margin: auto;
@@ -39,40 +45,63 @@ header .title {
 }
 
 header .title a {
-    font-size: 30px;
-    display: inline-block;
-    padding: 5px 0px;
-    color: #ffffff;
-    font-weight: 600;
-    letter-spacing: 2px;
+font-size: 30px;
+display: inline-block;
+padding: 5px 0px;
+color: #ffffff;
+font-weight: 600;
+letter-spacing: 2px;
 }
 
 header .title a span {
-    color: #e66767;
+color: #e66767;
 }
 
 header .navbar {
-    float: right;
+float: right;
 }
 
 header .navbar ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+list-style: none;
+padding: 0;
+margin: 0;
 }
 
 header .navbar ul li {
-    display: inline;
-    padding: 0 15px;
+list-style: none;
+position: relative;
+float: left;
 }
 
 header .navbar ul li a {
-    display: inline-block;
-    padding: 10px 0px;
-    font-size: 16px;
-    text-transform: uppercase;
-    color: #ffffff;
-    position: relative;
+display: block;
+padding: 22px 14px;
+font-size: 16px;
+text-transform: uppercase;
+color: #ffffff;
+position: relative;
+text-decoration: none;
+}
+header .navbar ul li ul{
+display: none;
+position: absolute;
+background-color: rgb(0, 0, 0);
+padding: 3px;
+border-radius: 0px 0px 4px 4px;
+}
+header .navbar ul li:hover ul {
+display: block;
+
+}
+header .navbar ul li ul li {
+width: 123px;
+border-radius: 4px;
+}
+header .navbar ul li ul li a{
+padding: 10px 14px;
+}
+header .navbar ul li ul li a:hover{
+background-color: #e66767;
 }
 
 header .navbar ul li a::before {
@@ -336,13 +365,22 @@ footer a {
    	  	  	 </a>
    	  	  </div>
    	  	  <div class="navbar">
-   	  	  	  <ul>
-   	  	  	  	  <li><a href="index.html">Home</a></li>
-   	  	  	  	  <li><a href="#">Services</a></li>
-   	  	  	  	  <li><a href="members.html">Members</a></li>
-   	  	  	  	  <li><a href="#">About</a></li>
-   	  	  	  	  <li><a href="#" class="active">Contact</a></li>
-   	  	  	  </ul>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Sports</a>
+             <ul>
+                 <li>
+                     <a href="#">Cricket</a>
+                     <a href="#">Football</a>
+                     <a href="#">Badminton</a>
+                     <a href="#">Chess</a>
+                 </li>
+             </ul>
+       </li>
+                <li><a href="members.html">members</a></li>
+                <li><a href="contacts.html" class="active">Contact</a></li>
+                <li><a href="signup.html">Sign up</a></li>
+          </ul>
    	  	  </div>
    	  </div>
    </header>
